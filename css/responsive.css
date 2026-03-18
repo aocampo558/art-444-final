@@ -1,0 +1,382 @@
+/* TABLET VIEW */
+@media only screen and (max-width:992px) {
+.collegeera {
+    width: 400px;
+  }
+
+  .main-timeline {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  .headline {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .container-odd,
+  .container-even {
+    padding: 25px;
+    border-radius: 30px;
+  }
+
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  justify-content: space-between;
+}
+
+/*this affects the individual images themselves (rounded corners etc) */
+
+.gallery-image {
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  gap: 20px;
+}
+  /* NAVIGATION */
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 40px;
+    
+  }
+
+  .darkmoon {
+    display:block;
+    width: 50px;
+    height: 50px;
+  }
+
+  section {
+    padding: 0 30px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #FCF8F5;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-right {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+
+
+  /* about tablet*/
+
+    /* hide center nav links */
+  .nav-links {
+    display: none;
+  }
+
+  /* show hamburger menu */
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  /* keep moon + toggle aligned right */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* slightly smaller name */
+  .headername {
+    font-size: 18px;
+  }
+
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 478px) {
+
+  .collegeera {
+    width: 250px;
+  }
+
+  .darkmoon {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+
+  .main-timeline {
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin: 5px;
+  }
+
+  .headline {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .container-odd,
+  .container-even {
+    padding: 25px;
+    border-radius: 30px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    justify-content: center;    
+    display:flex;
+    width: 100%;
+  }
+
+  .gallery-image {
+    width: 100%; /* one image per row */
+  }
+
+  /* NAVIGATION */
+
+  .menu-toggle {
+    display: flex;
+    font-size: 22px;
+    cursor: pointer;
+    align-items: center;
+    line-height: 1;
+    height: 40px;
+  }
+
+  .headline {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 0 30px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #FCF8F5;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .headername {
+    font-size: 16px;
+    align-items: center;
+  }
+
+      .nav-right {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+
+
+
+
+    
+.main-nav-about {
+  background-color: #FCF8F5;
+  height: 80px;
+}
+
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-size: 14px;
+  font-family: 'instrumentalserif';
+  position: relative;
+}
+
+.headername {
+  color: #5D241D;
+  font-size: 20px;
+  font-family: 'maiken';
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 1px;
+}
+
+.darkmoon {
+  width: 80px;
+  height: 80px;
+}
+
+.about-wrapper {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.me {
+  width:240px;
+}
+
+.about-title {
+  width: 240px;
+}
+
+.about-paragraphs {
+  max-width: 280px;
+  font-size: 12px;
+  padding: 15px;
+}
+
+#faqs .container{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-toggle-about {
+    display: flex;
+    font-size: 22px;
+    cursor: pointer;
+    align-items: center;
+    line-height: 1;
+    height: 40px;
+  }
+
+  .nav-links-about {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:992px) {
+
+  .me {
+width: 50%;
+  }
+
+.about-content-paragraphs {
+width: 50%;
+}
+
+.about-wrapper{
+  flex-direction:column;
+  gap:40px;
+  text-align:center;
+}
+
+.about-content-paragraphs{
+  align-items:center;
+}
+
+.about-title{
+  width:350px;
+}
+
+.about-paragraphs{
+  max-width:500px;
+  width:110%;
+  font-size:14px;
+}
+
+#faqs .container{
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+.faqtitle{
+  width:200px;
+  margin-bottom:40px;
+}
+
+.faq-right{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.question{
+  width:90%;
+  max-width:600px;
+}
+
+.answer{
+  width:90%;
+  max-width:600px;
+  text-align:left;
+}
+
+.question {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
+
+.footer-about{
+  flex-direction:column;
+  gap:20px;
+  text-align:center;
+}
+
+.links-about{
+  justify-content:center;
+}
+
+}
+

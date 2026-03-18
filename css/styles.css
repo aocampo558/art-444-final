@@ -1,0 +1,444 @@
+/* CSS GOES HERE */
+
+
+* {
+margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'maiken';
+    src: url(../fonts/maiken.otf);
+}
+
+@font-face {
+font-family: 'instrumentalserif';
+    src: url(../fonts/instrumentalserif.ttf)
+}
+
+@font-face {
+font-family: 'Roboto-Light.ttf';
+    src: url(../fonts/Roboto-Light.ttf)
+}
+
+:root{
+  --primary-bg-color: #CFA899;
+  
+}
+
+h2 {font-family: 'maiken';}
+
+
+html {
+    font-family: 'Roboto-Light.ttf', sans-serif;
+}
+body {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+  background-color: #CFA899;
+}
+
+
+/* this affects the colege era logo*/ 
+
+.container {
+    width: 100%;
+    max-width: 1700px;
+    text-align: left;
+    margin: 0 auto;}
+
+  
+h1 {
+    font-size: 3em;
+}
+/* this is where the background color and height of my nav bar is */
+nav {
+background-color: #FCF8F5;
+height: 80px;
+position: relative;
+}
+
+/* this is my name in the nav bar */
+.headername {
+  color:#5D241D;
+  font-size: 20px;
+  font-family: 'maiken';
+  padding: 30px;
+}
+
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: 'instrumentalserif';
+  padding: 0 30px;
+}
+
+/* this is getting rid of the blue link */
+nav a {text-decoration:none;
+color:#5D241D;
+}
+
+ /* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: left;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.darkmoon {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;              /* space between links */
+  position: absolute;     /* lets it truly center */
+  left: 50%;
+  letter-spacing: 1px;
+}
+
+.collegeera {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-timeline {
+  font-family: 'maiken', serif;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px; /*space below "college era" */
+  margin-bottom:60px; /*space above first section */
+  color: #FCF8F5;
+  letter-spacing: 10px;
+
+}
+
+.headline h2 {
+  font-family: 'maiken', serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  align-items: center;
+  color: #5D241D;
+  letter-spacing: 2px;
+}
+/*this is the paragraph*/
+
+.headline {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;   
+  align-items: center;
+  margin-bottom: 50px;
+  font-family: 'Roboto-Light.ttf';
+}
+
+.container-odd,
+.container-even {
+  max-width: 1050px;  /*this is the boxes behind*/      
+  width: 100%;               /* allows breathing room */
+  margin: 40px auto;       /* space between sections */
+  padding: 40px 60px;     /* internal spacing */
+  border-radius: 50px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+
+/*these are the images*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  justify-content: space-between;
+}
+
+/*this affects the individual images themselves (rounded corners etc) */
+
+.gallery-image {
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.container-even {
+  background-color: #efe4dc;
+}
+
+.container-odd {
+  background-color: #ECC9BC;
+}
+
+.copywrite {
+  font-family: 'instrumentalserif';
+  color: #5D241D;
+  font-size: 14px;
+  display: flex;
+}
+
+
+.footername {
+
+  font-family:'maiken';
+  color:#5D241D;
+  font-size: 20px;}
+
+.links {
+
+  font-family:'instrumentalserif';
+  color:#5D241D;
+  font-size: 14px;
+  display: flex;
+  gap: 20px;
+
+}
+
+.links a {
+  text-decoration: none;
+  color: #5D241D;
+}
+/* the color behind */
+.footer {
+    background-color: #E5DAD1;
+    padding: 30px;
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    letter-spacing: 1px;
+  
+  }
+
+
+
+/* ABOUT PAGE*/
+
+.menu-toggle {
+  display: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+
+.main-nav-about {
+  background-color: #FCF8F5;
+  height: 80px;
+}
+
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-size: 14px;
+  font-family: 'instrumentalserif';
+  position: relative;
+}
+
+.headername {
+  color: #5D241D;
+  font-size: 20px;
+  font-family: 'maiken';
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #5D241D;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 1px;
+}
+
+.darkmoon {
+  width: 50px;
+  height: 50px;
+}
+
+#about-section {
+  background-color: #CFA899;
+  padding: 50px 0;              /*this is the space between the nav bar and about me*/
+  display: flex;
+  justify-content: center;
+}
+
+.about-wrapper {
+  display:flex;
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+  padding: 0 30px; /*space between the left and right */
+}
+
+.group-about-title-right {
+  display:flex;
+  flex-direction: column;
+}
+
+.me {
+  width: 425px;
+  border-radius: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-paragraphs {
+  max-width: 400px;
+  font-family: 'Roboto-Light.ttf';
+  line-height: 1.6;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0px;
+  background-color: #F5E1D9;
+  font-size: 13px;
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+.about-content-paragraphs {
+  display:flex;
+  flex-flow:column;
+  gap: 25px;
+}
+.faqheading {
+  width: 500px;
+  margin-bottom: 30px;
+}
+
+/* faq sections*/
+
+#faqs {
+background-color: #ECC9BC;
+padding: 100px 0;
+padding: 20px;
+}
+
+#faqs .container {
+  display: flex;
+  justify-content: center;  /*this is the background of FAQS*/
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*faqs TITLE*/
+
+.faqtitle {
+  width: 300px;
+height: auto;
+}
+
+details {
+width: 100%;
+margin-bottom: 20px;
+padding: 10px;
+}
+
+/* this is removing the default arrow on my page*/
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* This is styling the bubble questions*/
+.question {
+background-color: #FCF8F5;
+padding: 10px 20px;
+border-radius: 30px;
+text-align: center;
+font-size: 14px;
+width: 800px;
+}
+.question:hover {
+  background-color: #e8ded7;
+}
+
+/* this is styling my ANSWER */
+.answer {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  width:800px;
+}
+
+.faq-right {
+  flex: 1;
+}
+
+/* footer */
+
+.footername {
+
+  font-family:'maiken';
+  color:#5D241D;
+  font-size: 20px;}
+
+.links-about {
+
+  font-family:'instrumentalserif';
+  color:#5D241D;
+  font-size: 14px;
+  display: flex;
+  gap: 20px;
+}
+
+.links-about a {
+  text-decoration: none;
+  color: #5D241D;
+}
+/* the color behind */
+.footer-about {
+    background-color: #E5DAD1;
+    padding: 30px;
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+
+  .question{
+  width:100%;
+  max-width:600px;
+}
+
+.answer{
+  width:100%;
+  max-width:600px;
+}
+ nav {
+  background-color: #FCF8F5;
+  height: 80px;
+  position: relative;
+}
+
+.menu-toggle-about {
+  display: none;
+}
+
+
+  
