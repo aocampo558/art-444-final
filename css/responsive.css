@@ -10,10 +10,15 @@
   }
 
   .headline {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 15px;
-  }
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.headline p {
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
 
   .container-odd,
   .container-even {
@@ -40,12 +45,8 @@
   /* NAVIGATION */
 
   .menu-toggle {
-    display: block;
-    font-size: 28px;
-    cursor: pointer;
-    line-height: 40px;
-    
-  }
+  display: flex !important;
+}
 
   .darkmoon {
     display:block;
@@ -58,30 +59,28 @@
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #FCF8F5;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    gap: 15px;
-    text-align: center;
-  }
+  display: none; /* 🔥 hide by default */
+  flex-direction: column;
+  background: #FCF8F5;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  gap: 15px;
+  text-align: center;
+}
 
   .nav-links.active {
-    display: flex;
-  }
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 
-  .nav-right {
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
+.nav-right {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
   .footer {
@@ -89,6 +88,18 @@
     gap: 15px;
     text-align: center;
   }
+
+  .menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
 
 

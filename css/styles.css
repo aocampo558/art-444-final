@@ -86,6 +86,32 @@ color:#5D241D;
  /* Hide hamburger on desktop */
 .menu-toggle {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  size: 10px;
+  transform: scale(0.8);
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 2px;
+  background-color: #5D241D;
+  transition: all 0.3s ease;
+}
+
+/* ANIMATION TO X */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .nav-right {
@@ -106,6 +132,14 @@ color:#5D241D;
   position: absolute;     /* lets it truly center */
   left: 50%;
   letter-spacing: 1px;
+}
+
+.nav-links a {
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
 }
 
 .collegeera {
@@ -149,7 +183,6 @@ color:#5D241D;
 .container-odd,
 .container-even {
   max-width: 1050px;  /*this is the boxes behind*/      
-  width: 100%;               /* allows breathing room */
   margin: 40px auto;       /* space between sections */
   padding: 40px 60px;     /* internal spacing */
   border-radius: 50px;
@@ -222,6 +255,15 @@ color:#5D241D;
     letter-spacing: 1px;
   
   }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -373,16 +415,26 @@ text-align: center;
 font-size: 14px;
 width: 800px;
 }
+
+.question {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;   /* 🔥 centers the pill */
+  text-align: center;
+}
+
 .question:hover {
   background-color: #e8ded7;
 }
 
 /* this is styling my ANSWER */
 .answer {
-  margin-top: 15px;
-  font-size: 14px;
-  line-height: 1.6;
-  width:800px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;         
+  text-align: center;
+  font-size: 13px;
+  padding: 15px 20px;
 }
 
 .faq-right {
@@ -421,15 +473,6 @@ width: 800px;
     letter-spacing: 1px;
   }
 
-  .question{
-  width:100%;
-  max-width:600px;
-}
-
-.answer{
-  width:100%;
-  max-width:600px;
-}
  nav {
   background-color: #FCF8F5;
   height: 80px;
