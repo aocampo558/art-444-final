@@ -57,7 +57,7 @@ h1 {
 /* this is where the background color and height of my nav bar is */
 nav {
 background-color: #FCF8F5;
-height: 80px;
+height: 50px;
 position: relative;
 }
 
@@ -66,7 +66,7 @@ position: relative;
   color:#5D241D;
   font-size: 20px;
   font-family: 'maiken';
-  padding: 30px;
+  padding: 15px;
 }
 
 .nav-bar-container {
@@ -219,7 +219,7 @@ color:#5D241D;
 .copywrite {
   font-family: 'instrumentalserif';
   color: #5D241D;
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
 }
 
@@ -294,6 +294,16 @@ color:#5D241D;
   position: relative;
 }
 
+.nav-links {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 1px;
+}
+
+
 .headername {
   color: #5D241D;
   font-size: 20px;
@@ -303,15 +313,6 @@ color:#5D241D;
 .main-nav a {
   text-decoration: none;
   color: #5D241D;
-}
-
-.nav-links {
-  display: flex;
-  gap: 25px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  letter-spacing: 1px;
 }
 
 .darkmoon {
@@ -447,7 +448,7 @@ width: 800px;
 
   font-family:'maiken';
   color:#5D241D;
-  font-size: 20px;}
+  font-size: 18px;}
 
 .links-about {
 
@@ -475,7 +476,7 @@ width: 800px;
 
  nav {
   background-color: #FCF8F5;
-  height: 80px;
+  height: 50px;
   position: relative;
 }
 

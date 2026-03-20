@@ -132,7 +132,7 @@
 }
 
 /* MOBILE VIEW */
-@media only screen and (max-width: 478px) {
+@media only screen and (max-width: 370px) {
 
   .collegeera {
     width: 250px;
@@ -149,6 +149,10 @@
     letter-spacing: 5px;
     margin: 5px;
   }
+
+  .headername {
+    font-size: 16px;
+   }
 
   .headline {
     grid-template-columns: 1fr;
@@ -215,10 +219,6 @@
     text-align: center;
   }
 
-  .headername {
-    font-size: 16px;
-    align-items: center;
-  }
 
       .nav-right {
         position: absolute;
@@ -229,6 +229,9 @@
         align-items: center;
         gap: 15px;
     }
+
+  
+}
 
 
 
@@ -253,13 +256,13 @@
 
 .headername {
   color: #5D241D;
-  font-size: 20px;
+  font-size: 14px;
   font-family: 'maiken';
 }
 
 
 .nav-links {
-  display: flex;
+  display: none;
   gap: 25px;
   position: absolute;
   left: 50%;
@@ -268,8 +271,8 @@
 }
 
 .darkmoon {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
 .about-wrapper {
@@ -304,14 +307,30 @@
     font-size: 22px;
     cursor: pointer;
     align-items: center;
-    line-height: 1;
-    height: 40px;
+    line-height: .5;
+    height: 20px;
   }
 
   .nav-links-about {
     display: none;
   }
+
+.main-timeline {
+  font-family: 'maiken', serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 60px; /*space below "college era" */
+  margin-bottom:60px; /*space above first section */
+  color: #FCF8F5;
+  letter-spacing: 10px;
+
 }
+
+
+
+
+
+
 
 @media only screen and (max-width:992px) {
 
