@@ -1,26 +1,21 @@
 // ALL YOU JS GOES HERE
 
 const hamburger = document.querySelector('.menu-toggle');
-const dropdown = document.querySelector('.dropdown').classList;
+const dropdown = document.querySelector('.dropdown');
+const navLinks = document.querySelectorAll('.dropdown a');
 
+if (hamburger && dropdown) {
 
-function revealDropdown() {
-    dropdown.toggle('dropdown')
-};
+  hamburger.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
 
-hamburger.addEventListener('click', revealDropdown);
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      dropdown.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
 
-
-
-
-const navkinks = document.querySelectorAll('a.links')
-for (let i = 0; i < navlinks.length; i ++) 
-    
-{
-navlinks [i].addEventListener('click', closemenu)
-}
-
-function closemenu () {
-    const dropdown = document.querySelector('.dropdown');
-    dropdown.classList.remove('show');
 }
