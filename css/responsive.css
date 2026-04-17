@@ -4,25 +4,28 @@
     width: 400px;
   }
 
+  .college-era-dark {
+        width: 400px;
+  }
+
 .menu-toggle {
   display: flex !important;
 }
 
-  .darkmoon {
-    display:block;
+  .toggle {
     width: 50px;
     height: 50px;
   }
 
   .nav-links {
-  display: none; /* 🔥 hide by default */
+  display: none; /* hide by default */
   flex-direction: column;
   background: #FCF8F5;
   position: absolute;
   top: 80px;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
   gap: 15px;
   text-align: center;
 }
@@ -44,35 +47,12 @@ display: flex;
 flex-direction: column;
 gap: 30px;
 align-items: center;
-background-color: #FCF8F5;
 padding: 20px;
 position: absolute;
 width: 100%;
 font-size: px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -175,11 +155,10 @@ font-size: px;
     width: 250px;
   }
 
-  .darkmoon {
-    width: 40px;
-    height: 40px;
-    display: block;
+  .college-era-dark {
+    width: 250px;
   }
+
 
   .main-timeline {
     font-size: 16px;
@@ -234,7 +213,7 @@ font-size: px;
   }
 
   .nav-links {
-    display: none;
+  
     flex-direction: column;
     background: #FCF8F5;
     position: absolute;
@@ -291,15 +270,8 @@ font-size: px;
   position: relative;
 }
 
-.headername {
-  color: #5D241D;
-  font-size: 14px;
-  font-family: 'maiken';
-}
-
 
 .nav-links {
-  display: none;
   gap: 25px;
   position: absolute;
   left: 50%;
@@ -307,24 +279,16 @@ font-size: px;
   letter-spacing: 1px;
 }
 
-.darkmoon {
-  width: 50px;
-  height: 50px;
-}
-
-.about-wrapper {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 25px;
-}
-
 .me {
-  width:240px;
+  width: 300px;
 }
 
 .about-title {
   width: 240px;
+}
+
+.about-title-dark {
+    width: 240px;
 }
 
 .about-paragraphs {
@@ -348,9 +312,7 @@ font-size: px;
     height: 20px;
   }
 
-  .nav-links-about {
-    display: none;
-  }
+  
 
 .main-timeline {
   font-family: 'maiken', serif;
@@ -380,9 +342,10 @@ width: 50%;
 }
 
 .about-wrapper{
-  flex-direction:column;
-  gap:40px;
-  text-align:center;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
 }
 
 .about-content-paragraphs{
@@ -391,6 +354,10 @@ width: 50%;
 
 .about-title{
   width:350px;
+}
+
+.about-title-dark {
+    width: 350px;
 }
 
 .about-paragraphs{
@@ -443,7 +410,5 @@ width: 50%;
 
 .links-about{
   justify-content:center;
-}
-
 }
 

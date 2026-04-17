@@ -5,49 +5,54 @@
   <meta name="author" content="Art 444 Student About Page">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>About Me</title>  
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" id="lightmode">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body> 
 
- <nav>
-  <div class="nav-bar-container">
+    <nav>
+  <div class="nav-bar-container"> 
+
     <span class="headername">ALYSSA OCAMPO</span>
+
     <div class="nav-links">
-      <a href="index.html#section-1">FALL '22</a>
-      <a href="index.html#section-2">SPRING '23</a>
-      <a href="index.html#section-3">FALL '23</a>
-      <a href="index.html#section-4">SPRING '24</a>
-      <a href="index.html#section-5">GAP FALL '24</a>
-      <a href="index.html#section-6">GAP SPRING '25</a>
-      <a class="button" href="about.html">ABOUT ME</a>
+      <a class="links" href="index.html#section-1">FALL '22</a>
+      <a class="links" href="index.html#section-2">SPRING '23</a>
+      <a class="links" href="index.html#section-3">FALL '23</a>
+      <a class="links" href="index.html#section-4">SPRING '24</a>
+      <a class="links" href="index.html#section-5">GAP FALL '24</a>
+      <a class="links" href="index.html#section-6">GAP SPRING '25</a>
+      <a class="button" href="index.html" target="_blank ">HOME</a>
     </div>
 
-    <div class="dropdown">
-  <div class="dropdown-style">
-    <a href="index.html#section-1">FALL '22</a>
-    <a href="index.html#section-2">SPRING '23</a>
-    <a href="index.html#section-3">FALL '23</a>
-    <a href="index.html#section-4">SPRING '24</a>
-    <a href="index.html#section-5">GAP FALL '24</a>
-    <a href="index.html#section-6">GAP SPRING '25</a>
-    <a class="button" href="about.html">ABOUT ME</a>
-  </div>
-</div>
-
-    <!-- RIGHT SIDE -->
     <div class="nav-right">
       <div class="menu-toggle">
   <span></span>
   <span></span>
   <span></span>
 </div>
-      <img class="darkmoon" src="images/darkmoon.svg" alt="Dark moon">
+      <img class="toggle darkmoon" onclick="toggletheme()" src="images/darkmoon.svg" alt="Dark moon">
+    
+    <img class="toggle lightsun" onclick="toggletheme()" src="images/brightmode.svg" alt="Dark moon">
+    
+    
     </div>
 
   </div>
 
+<div class="dropdown">
+
+  <div class="dropdown-style" id="topNav">
+      <a href="#section-1">FALL '22</a>
+      <a href="#section-2">SPRING '23</a>
+      <a href="#section-3">FALL '23</a>
+      <a href="#section-4">SPRING '24</a>
+      <a href="#section-5">GAP FALL '24</a>
+      <a href="#section-6">GAP SPRING '25</a>
+      <a class="button" href="index.html" target="_blank ">HOME</a>
+    </div>
+</div>
 </nav>
 
 <!-- MAIN HEADER --> 
@@ -60,7 +65,9 @@
   <div class="about-content-paragraphs">
    
       <img class="about-title" src="images/aboutmelight.svg" alt="about me title">
-      
+
+          <img class="about-title-dark" src="images/about-me-dark-mode.svg" alt="about me title">
+
       <div class="about-paragraphs">
         <p>Alyssa was born and raised in Northern California in a small suburbian town called San Ramon, California. She is currently an undergraduate student at San Diego State University majoring in Art with emphasis in Multimedia Design.</p>
         <p>She is an artist, writer, videographer, and multi-creative who desires to contribute to society as an artist and make an impact in the world, especially within the environmental and wildlife community. She is passionate about nature and longs to use her skills to help better the world and bring attention to important aspects of the world such as health, wellness, faith, and nature. </p>

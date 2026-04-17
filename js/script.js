@@ -19,3 +19,25 @@ if (hamburger && dropdown) {
   });
 
 }
+
+function toggletheme() {
+const theme = document.getElementById("lightmode");
+const current = theme.getAttribute("href");
+
+if (current === "css/styles.css") {
+theme.setAttribute("href", "css/dark-mode.css");
+} else {
+theme.setAttribute("href", "css/styles.css");
+}
+
+
+}
+
+const today = new Date ();
+
+if (today.getHours() >= 18 || today.getHours() <6) {
+
+  document.getElementById("lightmode").setAttribute("href", "css/dark-mode.css");
+} else {
+  document.getElementById("lightmode").setAttribute("href", "css/styles.css");
+}

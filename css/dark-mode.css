@@ -38,16 +38,9 @@ body {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-  background-color: #CFA899;
+  background-color: #330601;
 }
 
-/* this is my name in the nav bar */
-.headername {
-  color:#5D241D;
-  font-size: 20px;
-  font-family: 'maiken';
-  padding: 15px;
-}
 
 /* this affects the colege era logo*/ 
 
@@ -61,13 +54,14 @@ body {
 h1 {
     font-size: 3em;
 }
-/* this is where the background color and height of my nav bar is */
-nav {
-background-color: #FCF8F5;
-height: 50px;
-position: relative;
-}
 
+/* this is my name in the nav bar */
+.headername {
+  color:#FCF8F5;
+  font-size: 20px;
+  font-family: 'maiken';
+  padding: 15px;
+}
 
 .nav-bar-container {
   display: flex;
@@ -80,7 +74,7 @@ position: relative;
 
 /* this is getting rid of the blue link */
 nav a {text-decoration:none;
-color:#5D241D;
+color:#FCF8F5;
 }
 
  /* Hide hamburger on desktop */
@@ -100,7 +94,7 @@ color:#5D241D;
 .menu-toggle span {
   width: 25px;
   height: 2px;
-  background-color: #5D241D;
+  background-color: #FCF8F5;
   transition: all 0.3s ease;
 }
 
@@ -109,7 +103,7 @@ color:#5D241D;
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  background-color: #FCF8F5;
+  background-color: #A75A4A;
   padding: 25px 0;
   width: 100%;
 }
@@ -125,6 +119,7 @@ color:#5D241D;
 
 .dropdown.active {
   display: block;
+
 }
 
 
@@ -141,10 +136,9 @@ color:#5D241D;
   height: 40px;
 }
 
-.lightsun {
+.darkmoon {
   display: none;
 }
-
 .nav-links {
   display: flex;
   gap: 25px;              /* space between links */
@@ -163,13 +157,16 @@ color:#5D241D;
 
 .collegeera {
   width: 600px;
-  display: block;
+  display: none;
   margin: 0 auto;
+
+  
 }
 
 .college-era-dark {
-  display: none;
-  
+  width: 600px;
+  display: block;
+  margin: 0 auto;
 }
 
 .main-timeline {
@@ -190,7 +187,7 @@ color:#5D241D;
   font-style: italic;
   margin: 0;
   align-items: center;
-  color: #5D241D;
+  color: #FCF8F5;
   letter-spacing: 2px;
 }
 /*this is the paragraph*/
@@ -202,6 +199,7 @@ color:#5D241D;
   align-items: center;
   margin-bottom: 50px;
   font-family: 'Roboto-Light.ttf';
+  color: #FCF8F5;
 }
 
 .container-odd,
@@ -233,16 +231,16 @@ color:#5D241D;
 }
 
 .container-even {
-  background-color: #efe4dc;
+  background-color: #813A31;
 }
 
 .container-odd {
-  background-color: #ECC9BC;
+  background-color: #5D241D;
 }
 
 .copywrite {
   font-family: 'instrumentalserif';
-  color: #5D241D;
+  color: #FCF8F5;
   font-size: 12px;
   display: flex;
 }
@@ -251,13 +249,13 @@ color:#5D241D;
 .footername {
 
   font-family:'maiken';
-  color:#5D241D;
+  color:#FCF8F5;
   font-size: 20px;}
 
 .links {
 
   font-family:'instrumentalserif';
-  color:#5D241D;
+  color:#FCF8F5;
   font-size: 14px;
   display: flex;
   gap: 20px;
@@ -266,11 +264,11 @@ color:#5D241D;
 
 .links a {
   text-decoration: none;
-  color: #5D241D;
+  color: #FCF8F5;
 }
 /* the color behind */
 .footer {
-    background-color: #E5DAD1;
+    background-color: #A7534A;
     padding: 30px;
     height: auto;
     display: flex;
@@ -299,7 +297,7 @@ color:#5D241D;
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  background-color: #FCF8F5;
+  background-color: #A7534A;
   padding: 25px 0;
   width: 100%;
 }
@@ -353,27 +351,15 @@ color:#5D241D;
 }
 
 nav {
-  background-color: #FCF8F5;
+  background-color: #5D241D;
   height: 50px;
   position: relative;
 }
 
 
-.main-nav a {
-  text-decoration: none;
-  color: #5D241D;
-}
-
-.darkmoon {
-  width: 50px;
-  height: 50px;
-}
-
-
-
 
 #about-section {
-  background-color: #CFA899;
+  background-color: #330601;
   padding: 50px 0;              /*this is the space between the nav bar and about me*/
   display: flex;
   justify-content: center;
@@ -393,11 +379,11 @@ nav {
 }
 
 .about-title {
-  display:block;
+  display:none;
 }
 
 .about-title-dark {
-  display: none;
+  display: block;
 }
 
 .me {
@@ -414,7 +400,7 @@ nav {
   border-radius: 20px;
   padding: 20px;
   margin: 0px;
-  background-color: #F5E1D9;
+  background-color: #A5493F;
   font-size: 13px;
   display: flex;
     flex-direction: column;
@@ -425,6 +411,7 @@ nav {
 .about-content-paragraphs {
   flex-flow:column;
   gap: 25px;
+  color:#FCF8F5;
 }
 .faqheading {
   width: 500px;
@@ -434,7 +421,7 @@ nav {
 /* faq sections*/
 
 #faqs {
-background-color: #ECC9BC;
+background-color: #7C3831;
 padding: 100px 0;
 padding: 20px;
 }
@@ -468,7 +455,7 @@ summary {
 
 /* This is styling the bubble questions*/
 .question {
-background-color: #FCF8F5;
+background-color: #5D241D;
 padding: 10px 20px;
 border-radius: 30px;
 text-align: center;
@@ -481,10 +468,11 @@ width: 800px;
   max-width: 600px;
   margin: 0 auto;   /* 🔥 centers the pill */
   text-align: center;
+  color: #FCF8F5;
 }
 
 .question:hover {
-  background-color: #e8ded7;
+  background-color: #A5493F;
 }
 
 /* this is styling my ANSWER */
@@ -495,24 +483,17 @@ width: 800px;
   text-align: center;
   font-size: 13px;
   padding: 15px 20px;
+  color:#FCF8F5;
 }
 
 .faq-right {
   flex: 1;
 }
 
-/* footer */
-
-.footername {
-
-  font-family:'maiken';
-  color:#5D241D;
-  font-size: 18px;}
-
 .links-about {
 
   font-family:'instrumentalserif';
-  color:#5D241D;
+  color:#FCF8F5;
   font-size: 14px;
   display: flex;
   gap: 20px;
@@ -520,11 +501,11 @@ width: 800px;
 
 .links-about a {
   text-decoration: none;
-  color: #5D241D;
+  color: #FCF8F5;
 }
 /* the color behind */
 .footer-about {
-    background-color: #E5DAD1;
+    background-color: #A7534A;
     padding: 30px;
     height: auto;
     display: flex;
