@@ -132,8 +132,8 @@ color:#FCF8F5;
 }
 
 .toggle {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .darkmoon {
@@ -331,14 +331,10 @@ color:#FCF8F5;
   height: 80px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 25px;              /* space between links */
-  position: absolute;     /* lets it truly center */
-  left: 50%;
-  letter-spacing: 1px;
+.main-nav a {
+  text-decoration: none;
+  color: #5D241D;
 }
-
 
 
 .nav-links {
@@ -360,9 +356,9 @@ nav {
 
 #about-section {
   background-color: #330601;
-  padding: 50px 0;              /*this is the space between the nav bar and about me*/
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 
 .about-wrapper {
@@ -410,8 +406,8 @@ nav {
 
 .about-content-paragraphs {
   flex-flow:column;
-  gap: 25px;
   color:#FCF8F5;
+  display: flex;
 }
 .faqheading {
   width: 500px;
@@ -461,6 +457,16 @@ border-radius: 30px;
 text-align: center;
 font-size: 14px;
 width: 800px;
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
 }
 
 .question {
@@ -488,6 +494,32 @@ width: 800px;
 
 .faq-right {
   flex: 1;
+}
+
+/* ICON BASE */
+.icon {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  color: #FCF8F5;
+}
+
+.icon::after {
+  content: "\002B"; /* + */
+}
+
+details[open] .icon::after {
+  content: "\2212"; /* real minus */
+}
+
+
+/* vertical line */
+.icon::after {
+  content: "+";
+  font-size: 18px;
+  color: #FCF8F5;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
 }
 
 .links-about {

@@ -41,3 +41,4 @@ if (today.getHours() >= 18 || today.getHours() <6) {
 } else {
   document.getElementById("lightmode").setAttribute("href", "css/styles.css");
 }
+

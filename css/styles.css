@@ -424,7 +424,7 @@ nav {
 
 .about-content-paragraphs {
   flex-flow:column;
-  gap: 25px;
+  display: flex;
 }
 .faqheading {
   width: 500px;
@@ -483,8 +483,35 @@ width: 800px;
   text-align: center;
 }
 
+.question {
+display: flex;
+  align-items: center;
+}
+
+.question {
+  position: relative;
+  justify-content: center; /* centers text */
+  padding: 14px 20px;
+}
+
 .question:hover {
   background-color: #e8ded7;
+}
+
+/* ICON BASE */
+.icon {
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+
+
+.icon::after {
+  content: "\002B"; /* + */
+}
+
+details[open] .icon::after {
+  content: "\2212"; /* real minus */
 }
 
 /* this is styling my ANSWER */
@@ -500,6 +527,8 @@ width: 800px;
 .faq-right {
   flex: 1;
 }
+
+
 
 /* footer */
 
