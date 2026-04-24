@@ -460,6 +460,35 @@ margin-bottom: 20px;
 padding: 10px;
 }
 
+
+.question {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;   /* 🔥 centers the pill */
+  text-align: center;
+  color: #FCF8F5;
+}
+
+.question:hover {
+  background-color: #A5493F;
+}
+
+/* this is styling my ANSWER */
+.answer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;         
+  text-align: center;
+  font-size: 13px;
+  padding: 15px 20px;
+  color:#FCF8F5;
+}
+
+.faq-right {
+  flex: 1;
+}
+
+
 /* this is removing the default arrow on my page*/
 summary {
   list-style: none;
@@ -474,13 +503,35 @@ border-radius: 30px;
 text-align: center;
 font-size: 14px;
 width: 800px;
+justify-content: space-between;
+align-items: center;
 }
+
+
+.icon::after {
+  content: "\002B"; /* + */
+}
+
+details[open] .icon::after {
+  content: "\2212"; /* real minus */
+}
+
+/* vertical line */
+.icon::after {
+  content: "+";
+  font-size: 18px;
+  color: #5D241D;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
 
 .question {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;   /* 🔥 centers the pill */
   text-align: center;
+  color: #5D241D;
 }
 
 .question {
@@ -498,22 +549,6 @@ display: flex;
   background-color: #e8ded7;
 }
 
-/* ICON BASE */
-.icon {
-  width: 14px;
-  height: 14px;
-  position: relative;
-}
-
-
-.icon::after {
-  content: "\002B"; /* + */
-}
-
-details[open] .icon::after {
-  content: "\2212"; /* real minus */
-}
-
 /* this is styling my ANSWER */
 .answer {
   width: 100%;
@@ -522,13 +557,12 @@ details[open] .icon::after {
   text-align: center;
   font-size: 13px;
   padding: 15px 20px;
+  color:#5D241D;
 }
 
 .faq-right {
   flex: 1;
 }
-
-
 
 /* footer */
 
