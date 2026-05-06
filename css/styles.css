@@ -280,6 +280,50 @@ color:#5D241D;
   
   }
 
+  .collegeera {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease; /* smooth animation */
+}
+
+.collegeera:hover {
+  transform: scale(1.05); /* zoom in slightly */
+  cursor: pointer;
+}
+
+.gallery-image {
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-image:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.gallery:hover .gallery-image {
+  opacity: 0.5;
+}
+
+.gallery .gallery-image:hover {
+  opacity: 1;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
@@ -447,6 +491,17 @@ padding: 20px;
   margin: 0 auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /*faqs TITLE*/
 
 .faqtitle {
@@ -460,6 +515,23 @@ margin-bottom: 20px;
 padding: 10px;
 }
 
+/* this is removing the default arrow on my page*/
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* This is styling the bubble questions*/
+.question {
+background-color: #FCF8F5;
+padding: 10px 20px;
+border-radius: 30px;
+text-align: center;
+font-size: 14px;
+width: 800px;
+display: flex;
+align-items: center;
+}
 
 .question {
   width: 100%;
@@ -496,17 +568,6 @@ summary {
 }
 
 /* This is styling the bubble questions*/
-.question {
-background-color: #FCF8F5;
-padding: 10px 20px;
-border-radius: 30px;
-text-align: center;
-font-size: 14px;
-width: 800px;
-justify-content: space-between;
-align-items: center;
-}
-
 
 .icon::after {
   content: "\002B"; /* + */
@@ -525,6 +586,21 @@ details[open] .icon::after {
   font-weight: bold;
 }
 
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+}
+
+/* ICON BASE */
+.icon {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  color: #5D241D;
+}
+
 
 .question {
   width: 100%;
@@ -532,17 +608,22 @@ details[open] .icon::after {
   margin: 0 auto;   /* 🔥 centers the pill */
   text-align: center;
   color: #5D241D;
-}
-
-.question {
-display: flex;
-  align-items: center;
-}
-
-.question {
+  display: flex;
   position: relative;
-  justify-content: center; /* centers text */
-  padding: 14px 20px;
+  background-color: #FCF8F5;
+}
+
+.question {
+
+padding: 10px 20px;
+border-radius: 30px;
+text-align: center;
+font-size: 14px;
+width: 800px;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;   /* 🔥 centers the pill */
+  
 }
 
 .question:hover {
@@ -597,6 +678,4 @@ display: flex;
   }
 
 
-
-
-  
+ 

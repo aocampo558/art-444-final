@@ -278,7 +278,59 @@ color:#FCF8F5;
   
   }
 
+  .collegeera {
+  display: none;
+}
 
+.college-era-dark {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.college-era-dark:hover {
+  transform: scale(1.05) translateY(-5px);
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.gallery-image {
+  border-radius: 30px;
+  object-fit: cover;
+  width: 30%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.3s ease;
+  
+  /* darker base shadow */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-image:hover {
+  transform: translateY(-10px) scale(1.05);
+  
+  /* stronger + cleaner shadow for dark bg */
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.gallery:hover .gallery-image {
+  opacity: 0.5;
+}
+
+.gallery .gallery-image:hover {
+  opacity: 1;
+}
+  
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
